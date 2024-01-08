@@ -1,0 +1,14 @@
+pip install requests
+
+import requests
+
+check = requets.get("https://github.com/")
+print(check)
+
+phone=input("Введіть номер підара +")
+
+try:
+    requests.post('https://my.vodafone.ua/primary/auth?language=ua',data={'phone':phone})
+
+except:
+    print('-')
